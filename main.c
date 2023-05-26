@@ -6,20 +6,6 @@
 
 
 
-int draw(int** mass, int lenX, int lenY){
-    int i, j;
-    for(i = 0; i < lenY; i++){
-        for(j = 0; j < lenX; j++){
-            if (mass[i][j] == 1){
-                printf("1");
-            } else {
-                printf("0");
-            }
-        }
-        printf("\n");
-    }
-}
-
 int brezenham(int** mass, int x1, int y1, int x2, int y2){
     int A = y2 - y1;
     int B = x1 - x2;
